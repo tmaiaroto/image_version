@@ -41,7 +41,8 @@ class ImageVersionHelper extends AppHelper {
 		
 		// init the component, if it hasn't been initialized	
 		if(!$this->component):
-			$this->component =& ClassRegistry::init('ImageVersionComponent', 'Component');
+			App::uses('ImageVersionComponent', 'Controller/Component');
+			$this->component = new ImageVersionComponent(new ComponentCollection());
 		endif;
 		
 		$outputImage = $this->component->version($options);

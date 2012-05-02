@@ -15,7 +15,7 @@
  * @created			2008-09-25 01:00:00
  * @license			http://www.opensource.org/licenses/mit-license.php The MIT License
  */
-class ImageVersionComponent extends Object {
+class ImageVersionComponent extends Component {
 	/**
 	 * Components
 	 *
